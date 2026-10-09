@@ -1,0 +1,11 @@
+# Install in worldmembench-vllm, never in the scoring environment.
+# vLLM's OpenCV dependency requires NumPy 2.
+vllm==0.17.0
+torch==2.10.0
+torchvision==0.25.0
+torchaudio==2.10.0
+transformers==4.57.6
+qwen-vl-utils==0.0.14
+numpy==2.2.6
+opencv-python-headless==4.13.0.92
+setuptools==80.10.2

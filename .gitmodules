@@ -1,0 +1,10 @@
+[submodule "third_party/Depth-Anything-3"]
+	path = third_party/Depth-Anything-3
+	url = https://github.com/ByteDance-Seed/Depth-Anything-3.git
+	ignore = dirty
+[submodule "third_party/dinov2"]
+	path = third_party/dinov2
+	url = https://github.com/facebookresearch/dinov2.git
+[submodule "third_party/vipe"]
+	path = third_party/vipe
+	url = https://github.com/nv-tlabs/vipe.git
