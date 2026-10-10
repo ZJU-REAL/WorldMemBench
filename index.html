@@ -9,6 +9,7 @@
   <meta property="og:image" content="https://zju-real.github.io/WorldMemBench/assets/teaser.png">
   <title>WorldMemBench — Memory in Video World Models</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="cover.js"></script>
   <script defer src="assets/paper-data.js"></script>
   <script defer src="assets/results-data.js"></script>
   <script defer src="assets/prompts-data.js"></script>
@@ -16,19 +17,10 @@
 </head>
 <body>
   <a class="skip-link" href="#teaser">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="#top">WorldMemBench</a>
-    <nav aria-label="Page sections">
-      <a href="#teaser">Overview</a>
-      <a href="#contributions">Contributions</a>
-      <a href="#leaderboard">Leaderboard</a>
-      <a href="#comparison">Comparisons</a>
-      <a href="#benchmarks">Benchmarks</a>
-    </nav>
-  </header>
-
   <main>
     <section class="cover" id="top" aria-labelledby="cover-title">
+      <div class="cover-media" id="cover-media" aria-hidden="true"></div>
+      <div class="cover-shade" aria-hidden="true"></div>
       <div class="cover-content page-width">
         <h1 id="cover-title">WorldMemBench</h1>
         <p class="cover-subtitle">A Comprehensive Benchmark for Memory in Video World Models</p>
@@ -36,10 +28,16 @@
         <p class="affiliations"><sup>1</sup> Zhejiang University &nbsp; <sup>2</sup> Fudan University &nbsp; <sup>3</sup> Ant Group &nbsp; <sup>4</sup> Nanjing University</p>
         <div class="cover-actions" aria-label="Project links">
           <span class="hero-button unavailable" aria-disabled="true" title="Paper link will be added after release"><svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h4M10 12h5M10 16h5"/></svg>Paper</span>
-          <a class="hero-button" href="https://github.com/ZJU-REAL/WorldMemBench"><svg class="button-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8A11.2 11.2 0 0 0 8.5 22.6c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1.01 1.73 2.66 1.23 3.31.94.1-.73.4-1.23.72-1.51-2.5-.28-5.13-1.25-5.13-5.55 0-1.22.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15A10.8 10.8 0 0 1 12 6.1c.96 0 1.93.13 2.84.38 2.15-1.45 3.09-1.15 3.09-1.15.61 1.55.23 2.69.12 2.98.72.79 1.15 1.8 1.15 3.02 0 4.31-2.63 5.27-5.14 5.54.41.35.77 1.04.77 2.1v3.09c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>GitHub</a>
+          <a class="hero-button primary" href="https://github.com/ZJU-REAL/WorldMemBench"><svg class="button-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8A11.2 11.2 0 0 0 8.5 22.6c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1.01 1.73 2.66 1.23 3.31.94.1-.73.4-1.23.72-1.51-2.5-.28-5.13-1.25-5.13-5.55 0-1.22.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15A10.8 10.8 0 0 1 12 6.1c.96 0 1.93.13 2.84.38 2.15-1.45 3.09-1.15 3.09-1.15.61 1.55.23 2.69.12 2.98.72.79 1.15 1.8 1.15 3.02 0 4.31-2.63 5.27-5.14 5.54.41.35.77 1.04.77 2.1v3.09c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>GitHub</a>
           <a class="hero-button" href="#leaderboard"><svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16M6 20v-6h3v6m2 0V9h3v11m2 0V5h3v15"/></svg>Leaderboard</a>
-          <a class="hero-button" href="https://huggingface.co/datasets/rescuerz/WorldMemBench-examples"><svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg>Datasets</a>
+          <a class="hero-button" href="https://huggingface.co/datasets/rescuerz/WorldMemBench"><svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg>Datasets</a>
         </div>
+      </div>
+      <div class="cover-stats page-width" aria-label="Benchmark scale">
+        <div><strong>260</strong><span>Cases</span></div>
+        <div><strong>6,705</strong><span>Videos</span></div>
+        <div><strong>20–35 s</strong><span>Rollouts</span></div>
+        <div><strong>9</strong><span>Models</span></div>
       </div>
       <a class="cover-next" href="#teaser" aria-label="Scroll to Overview"><span>Overview</span><span aria-hidden="true">↓</span></a>
     </section>
