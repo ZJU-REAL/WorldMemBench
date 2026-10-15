@@ -13,18 +13,23 @@
 
 <div align="center">
   <p>
-    <a href="https://github.com/ZJU-REAL/WorldMemBench"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&amp;logoColor=red" alt="arXiv Paper" height="22"></a>
-    <a href="https://github.com/ZJU-REAL/WorldMemBench"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Leaderboard-blue" alt="Hugging Face Leaderboard" height="22"></a>
-    <a href="https://huggingface.co/datasets/rescuerz/WorldMemBench"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-red" alt="Hugging Face Dataset" height="22"></a>
+    <a href="https://arxiv.org/abs/2610.19063"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&amp;logoColor=red" alt="arXiv Paper" height="22"></a>
+    <a href="https://huggingface.co/papers/2610.19063"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Daily%20Papers-ffbd00" alt="Hugging Face Daily Papers" height="22"></a>
+    <a href="https://huggingface.co/datasets/rescuerz/WorldMemBench"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-red" alt="Hugging Face Dataset" height="22"></a>
     <a href="https://zju-real.github.io/WorldMemBench/"><img src="https://img.shields.io/badge/Project-Website-green?logo=googlechrome&amp;logoColor=green" alt="Project Website" height="22"></a>
-    <a href="https://github.com/ZJU-REAL/WorldMemBench"><img src="https://img.shields.io/badge/GitHub-Code-black?logo=github" alt="GitHub Code" height="22"></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" height="22"></a>
+    <a href="https://zju-real.github.io/WorldMemBench/#leaderboard"><img src="https://img.shields.io/badge/Leaderboard-Results-blue" alt="Leaderboard" height="22"></a>
   </p>
 </div>
 
 <div align="center">
   <a href="assets/teaser.pdf"><img src="assets/teaser.png" width="100%" alt="WorldMemBench overview: case coverage, multi-revisit evaluation, evaluation dimensions, and model capability profiles."></a>
 </div>
+
+## News
+
+- [2026/10/13] Our [paper](https://arxiv.org/abs/2610.19063) is available on arXiv.
+- [2026/10/09] Our [evaluation code](#quick-start) is released.
+- [2026/10/09] Our [inference results](https://huggingface.co/datasets/rescuerz/WorldMemBench) are available on Hugging Face.
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -388,6 +393,23 @@ WorldMemBench builds on the following open-source projects. We thank their autho
 - ... and many other excellent open-source projects
 
 ## Citation
+
+If you find WorldMemBench useful for your research, please consider citing our paper.
+
+```bibtex
+@misc{zhou2026worldmembenchcomprehensivebenchmarkmemory,
+  title={WorldMemBench: A Comprehensive Benchmark for Memory of Video World Models},
+  author={Nan Zhou and Jianxiong Gao and Qiuyu Wang and Wen Wang and
+          Jiahao Wang and Yufeng Yuan and Shuaiting Li and Hao Ouyang and
+          Yujun Shen and Weiming Lu and Jun Xiao and Yueting Zhuang and
+          Yongliang Shen},
+  year={2026},
+  eprint={2610.19063},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2610.19063},
+}
+```
 
 ## License
 
