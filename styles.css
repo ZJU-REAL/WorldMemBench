@@ -139,9 +139,13 @@ tbody th { font-weight: 640; }
 .score-cell.selected-return { border: 2px solid var(--blue); font-weight: 780; }
 .comparison-card video { display: block; width: 100%; aspect-ratio: 16/9; object-fit: contain; background: #18181b; }
 
-.benchmark-section .table-scroll { margin-top: 19px; }
+.benchmark-section { padding-block: 40px; }
+.benchmark-section .section-heading { margin-bottom: 14px; }
+.benchmark-section .table-scroll { margin-top: 12px; }
 .benchmark-table { min-width: 1100px; }
 .benchmark-table th:first-child { min-width: 155px; }
+.benchmark-table th, .benchmark-table td { padding: 8px 12px; }
+.benchmark-table tbody th, .benchmark-table tbody td { padding-block: 3px; }
 .benchmark-table td { font-weight: 560; }
 .benchmark-table thead th { border-bottom: 2px solid #242427; }
 .benchmark-table .our-row th, .benchmark-table .our-row td { background: #f0eff8; color: #252039; font-weight: 740; border-top: 1px solid #d5cceb; }
@@ -171,9 +175,12 @@ tbody th { font-weight: 640; }
 .legend-dot { font-weight: 700; }
 .citation-section { background: var(--wash); }
 .citation-section p { color: var(--secondary); }
-.citation-body { max-width: 840px; }
-.citation-placeholder { margin-top: 25px; padding: 23px 27px; border: 1px solid #e2e2e5; border-radius: 12px; background: #fff; font-size: 14px; font-weight: 610; }
-.citation-placeholder span { font-size: 12px; color: var(--secondary); font-weight: 400; }
+.citation-body { max-width: 840px; text-align: left; }
+.citation-bibtex { margin: 20px 0 0; padding: 22px 26px; border: 1px solid #e2e2e5; border-radius: 12px; background: #fff; color: #252529; font-size: 13px; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
+.citation-bibtex code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+.copy-bibtex { margin-top: 16px; padding: 10px 20px; border: 0; border-radius: 100px; background: #171719; color: #fff; font-size: 14px; font-weight: 650; }
+.copy-bibtex:hover { background: #363639; }
+.copy-bibtex:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
 .site-footer { background: #fff; border-top: 1px solid var(--line); padding: 24px 0; }
 .site-footer .page-width { display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: 12px; color: var(--secondary); }
 .site-footer .page-width > span { color: var(--ink); font-size: 14px; font-weight: 750; }

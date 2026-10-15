@@ -300,4 +300,14 @@
   $("prompt-toggle").addEventListener("click", () => { promptExpanded = !promptExpanded; renderPrompt(); });
   renderComparison();
   renderBenchmarkSymbols();
+  $("copy-bibtex").addEventListener("click", async (event) => {
+    const button = event.currentTarget;
+    try {
+      await navigator.clipboard.writeText($("citation-bibtex").textContent);
+      button.textContent = "Copied!";
+    } catch {
+      button.textContent = "Copy failed. Please try again.";
+    }
+    setTimeout(() => { button.textContent = "Copy BibTeX"; }, 2000);
+  });
 })();
